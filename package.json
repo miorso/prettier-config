@@ -20,7 +20,7 @@
 	"exports": "./src/index.js",
 	"scripts": {
 		"prepare": "husky",
-		"prettier": "prettier -check .",
+		"prettier": "prettier --check .",
 		"prettier:fix": "prettier --write ."
 	},
 	"lint-staged": {
