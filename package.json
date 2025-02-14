@@ -1,0 +1,45 @@
+{
+	"name": "@miorso/prettier-config",
+	"version": "1.0.0",
+	"description": "Shared Prettier configuration for consistent code formatting across projects",
+	"keywords": [
+		"prettier",
+		"prettierconfig"
+	],
+	"homepage": "https://github.com/miorso/prettier-config#readme",
+	"bugs": {
+		"url": "https://github.com/miorso/prettier-config/issues"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/miorso/prettier-config.git"
+	},
+	"license": "MIT",
+	"author": "Mikel Orbea",
+	"type": "module",
+	"exports": "./src/index.js",
+	"scripts": {
+		"prepare": "husky",
+		"prettier": "prettier -check .",
+		"prettier:fix": "prettier --write ."
+	},
+	"lint-staged": {
+		"**/*": [
+			"prettier --write --ignore-unknown"
+		]
+	},
+	"devDependencies": {
+		"husky": "^9.1.7",
+		"lint-staged": "^15.4.3",
+		"prettier": "^3.5.1"
+	},
+	"peerDependencies": {
+		"prettier": ">=3.0.0"
+	},
+	"engines": {
+		"node": ">=18"
+	},
+	"publishConfig": {
+		"access": "public"
+	}
+}
