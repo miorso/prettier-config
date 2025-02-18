@@ -1,6 +1,6 @@
 {
 	"name": "@miorso/prettier-config",
-	"version": "1.0.2",
+	"version": "1.0.3",
 	"description": "Shared Prettier configuration for consistent code formatting across projects",
 	"keywords": [
 		"prettier",
